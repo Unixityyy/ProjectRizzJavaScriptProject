@@ -67,4 +67,4 @@ Material list:
 0: Default
 1: Lava
 ```
-Good thing to note, the material will be tinted based on the user's color, I will try to make it so that if it isn't default, the material isn't tinted.
+<s>Good thing to note, the material will be tinted based on the user's color, I will try to make it so that if it isn't default, the material isn't tinted.</s> I have solved this problem before even releasing the update, so it's now normal.

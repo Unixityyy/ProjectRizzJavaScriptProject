@@ -32,29 +32,73 @@ function tick(dt)
 
 ---
 The next ones aren't really functions, but are still as useful.
-### `PlayerBindings`
-The player class has 6 properties:<br>
-#### `VibrateIntensity: number`<br>The vibration intensity when the player touches the ground.<br>
-
-#### `MaxJumpSpeed: number`<br>The `maxJumpSpeed` of the player. See [`GorillaLocomotion`](https://github.com/Another-Axiom/GorillaLocomotion) for more details.
-
-#### `JumpMultiplier: number`<br>The `jumpMultiplier` of the player. See [`GorillaLocomotion`](https://github.com/Another-Axiom/GorillaLocomotion) for more details.
+### `LocalPlayer: PlayerBindings`
+The `PlayerBindings` class has 4 properties:<br>
 
 #### `readonly CurrentVelocityAverage: Vector3`<br>The current average velocity of the player.
 
-#### `Position: Vector3`<br>The current position of the player.
+#### `readonly Position: Vector3`<br>The current real world position of the player.
+
+#### `readonly Name: string`<br>The current name of the player.
 
 #### `Material: number`<br>The current material of the player.
 See the bottom for a list of materials.
 
 ---
-### Please use the `LocalPlayer` class instead of the `PlayerBindings` class, as `LocalPlayer` is your own player.
----
 ###  `Vector3`
-The Vector3 class has 3 properties, and represents a Unity Vector3 object:
+The Vector3 class has 3 properties, and represents a Unity Vector3 object.
 #### `x: number`
 #### `y: number`
 #### `z: number`
+
+---
+### `Vector2`
+The Vector2 class has 2 properties, and represents a Unity Vector2 object.
+#### `x: number`
+#### `y: number`
+
+---
+### `PlayerSettings: Settings`
+The `Settings` class has 4 properties of the local player, which will only really affect the local player.
+#### `VibrateIntensity: number`<br>The vibration intensity when the player touches the ground.
+
+#### `VibrateDuration: number`<br>The duration of the vibration when the player touches the ground.
+
+#### `MaxJumpSpeed: number`<br>The `maxJumpSpeed` of the player. See [`GorillaLocomotion`](https://github.com/Another-Axiom/GorillaLocomotion) for more details.
+
+#### `JumpMultiplier: number`<br>The `jumpMultiplier` of the player. See [`GorillaLocomotion`](https://github.com/Another-Axiom/GorillaLocomotion) for more details.
+
+---
+### `RightController: RControllerBindings`
+The `RControllerBindings` class has 6 properties of the Right Controller, which you can use to detect button presses.
+
+#### `readonly AButtonPressed: boolean`<br>True if the X button is pressed. False otherwise.
+
+#### `readonly BButtonPressed: boolean`<br>True if the Y button is pressed. False otherwise.
+
+#### `readonly Thumbstick2DAxis: Vector2`<br>The Vector2 value of the thumbstick position.
+
+#### `readonly ThumbstickPressed: boolean`<br>True if the Thumbstick is pressed in. False otherwise.
+
+#### `readonly TriggerValue: number`<br>How much the trigger is pressed in. Min value: 0.0 Max value: 1.0
+
+#### `readonly Grip: number`<br>How much the grip is pressed in. Min value: 0.0 Max value: 1.0
+
+---
+### `LeftController: LControllerBindings`
+The `LControllerBindings` class has 6 properties of the Left Controller, which you can use to detect button presses.
+
+#### `readonly XButtonPressed: boolean`<br>True if the X button is pressed. False otherwise.
+
+#### `readonly YButtonPressed: boolean`<br>True if the Y button is pressed. False otherwise.
+
+#### `readonly Thumbstick2DAxis: Vector2`<br>The Vector2 value of the thumbstick position.
+
+#### `readonly ThumbstickPressed: boolean`<br>True if the Thumbstick is pressed in. False otherwise.
+
+#### `readonly TriggerValue: number`<br>How much the trigger is pressed in. Min value: 0.0 Max value: 1.0
+
+#### `readonly Grip: number`<br>How much the grip is pressed in. Min value: 0.0 Max value: 1.0
 
 ---
 

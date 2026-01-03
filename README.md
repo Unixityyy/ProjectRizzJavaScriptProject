@@ -28,7 +28,16 @@ function tick(dt)
 {
     log(`game has ticked. deltaTime ${dt}`)
 }
+
 ```
+---
+### `hasAssetPermission()`
+
+This isn't being used right now. Returns a bool that indicates whether the user accepted the custom asset warning.
+- `true`: They accepted the asset warning.
+- `false`: They did not accept the asset warning.<br>
+If this is `false` then the game will refuse to load your custom assets.<br>
+**The warning will only show if you have an `Assets` folder inside of the `JS` folder!**
 
 ---
 The next ones aren't really functions, but are still as useful.
@@ -82,7 +91,7 @@ The `RControllerBindings` class has 6 properties of the Right Controller, which 
 
 #### `readonly TriggerValue: number`<br>How much the trigger is pressed in. Min value: 0.0 Max value: 1.0
 
-#### `readonly Grip: number`<br>How much the grip is pressed in. Min value: 0.0 Max value: 1.0
+#### `readonly GripValue: number`<br>How much the grip is pressed in. Min value: 0.0 Max value: 1.0
 
 ---
 ### `LeftController: LControllerBindings`
@@ -98,7 +107,7 @@ The `LControllerBindings` class has 6 properties of the Left Controller, which y
 
 #### `readonly TriggerValue: number`<br>How much the trigger is pressed in. Min value: 0.0 Max value: 1.0
 
-#### `readonly Grip: number`<br>How much the grip is pressed in. Min value: 0.0 Max value: 1.0
+#### `readonly GripValue: number`<br>How much the grip is pressed in. Min value: 0.0 Max value: 1.0
 
 ---
 

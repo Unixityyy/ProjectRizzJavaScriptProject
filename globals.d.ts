@@ -1,5 +1,6 @@
 declare function log(message: any): void;
 declare function tick(dt: number): void;
+declare function hasAssetPermission(): boolean;
 
 declare class Vector3 {
     x: number;

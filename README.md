@@ -115,6 +115,10 @@ The `LControllerBindings` class has 6 properties of the Left Controller, which y
 By default, Project Rizz will automatically load the file at `Android/data/JS/main.js`, so use SideQuest or `adb push` to upload your file to your quest.
 
 ---
+## Publish the script
+If you think that your script is worthy of other people using it, open a pull request [here](https://github.com/Unixityyy/pjrz-script-registry)!
+
+---
 Material list:
 ```
 0: Default
